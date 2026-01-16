@@ -21,6 +21,6 @@ public abstract class CustomController : ControllerBase
 
     protected OkObjectResult BuildResponse<T>(T value)
     {
-        return Ok(value);
+        return Ok(Result.Success(value));
     }
 }
